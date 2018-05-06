@@ -15,10 +15,10 @@ class Author
     @@post_count += 1
   end
 
-  def add_post_by_title(title, post)
-    post = Post.new(title, post)
-    @posts << post
-    post.artist = self
+  def add_post_by_title(title)
+    song = Post.new(title)
+    @posts << song
+    song.artist = self
   end
   def self.post_count
     @@post_count
