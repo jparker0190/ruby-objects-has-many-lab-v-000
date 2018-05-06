@@ -6,5 +6,7 @@ class Post
   def author_name
     self.author.name
   end
-
+  def self.song_count
+      @@song_count
+    end
 end
